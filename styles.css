@@ -98,3 +98,17 @@ body {
         border-radius: 0 0 10px 10px;
     }
 }
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+.goto-btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 40px;
+    background-color: hsl(0, 0%, 50%);
+    margin-left: 10px;
+   
+}
