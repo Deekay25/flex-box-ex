@@ -1,49 +1,46 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background: linear-gradient(to right, #f1f2b5, #135058); 
+  background: linear-gradient(to right, #f1f2b5, #135058);
 }
 
 .container {
-    background-color: #135058;
-    max-width: 550px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(70px, auto);
-    grid-gap: 1em;
-    margin: 200px auto;
-    padding: 10px;
-    grid-template-areas: 
+  background-color: #135058;
+  max-width: 550px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(70px, auto);
+  grid-gap: 1em;
+  margin: 200px auto;
+  padding: 10px;
+  grid-template-areas:
     "box1 box1 box1 box1 box2 box2"
     "box1 box1 box1 box1 box2 box2"
     "box3 box3 box3 box4 box4 box4"
     "box3 box3 box3 box5 box5 box5";
 }
 
-
 .box1 {
-    grid-area: box1;
-    background-color: orangered;
+  grid-area: box1;
+  background-color: orangered;
 }
 .box2 {
-    grid-area: box2;
-    background-color: orange;
+  grid-area: box2;
+  background-color: orange;
 }
 .box3 {
-    grid-area: box3;
-    background-color: green;
+  grid-area: box3;
+  background-color: green;
 }
 .box4 {
-    grid-area: box4;
-    background-color: rgb(9, 190, 250);
+  grid-area: box4;
+  background-color: rgb(9, 190, 250);
 }
 .box5 {
-    grid-area: box5;
-    background-color: rgb(9, 190, 250);
-
+  grid-area: box5;
+  background-color: rgb(9, 190, 250);
 }
-

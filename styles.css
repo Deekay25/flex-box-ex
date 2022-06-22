@@ -1,135 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Roboto:wght@100&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-   
-    font-size: 15px;
-    background-color: hsl(0, 0%, 95%);
-    /* margin: auto; */
-    margin-top: 60px;
-   
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  /* margin: auto; */
+  margin-top: 60px;
 }
 
 .container {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 1;
-    background-color: hsl(0, 0%, 95%);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .cards {
-    width: 18em;
-    padding: 2em 0 2em 2em;
+  width: 18em;
+  padding: 2em 0 2em 2em;
 }
 
 .card1 {
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0 0 10px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
 }
 
 .card2 {
-    background-color:  hsl(184, 100%, 22%);
+  background-color: hsl(184, 100%, 22%);
 }
 
 .card3 {
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px 10px 0px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0px;
 }
 .card-icon img {
-    padding: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .card-header h2 {
-    padding: 0 0 2rem 0;
-    color: hsl(0, 0%, 95%);
-    font-size: 2rem;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
+  padding: 0 0 2rem 0;
+  color: hsl(0, 0%, 95%);
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
 }
 
 .card-body p {
-    padding: 0 0 5rem 0;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
-    font-style: normal;
-    font-weight:400;
-
+  padding: 0 0 5rem 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.card-footer  {
-    padding: 0 0 1rem 0;
+.card-footer {
+  padding: 0 0 1rem 0;
 }
 
 .card-footer button {
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 40px;
-    background-color: hsl(0, 0%, 95%);
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 40px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .card1 button {
-    color: hsl(31, 77%, 52%);
-    
+  color: hsl(31, 77%, 52%);
 }
 .card2 button {
-    color:hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
 }
 .card3 button {
-    color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
 }
 .card-footer button:hover {
-    background: none;
-    border: solid 1px white;
-    cursor: pointer;
-    color: white;
+  background: none;
+  border: solid 1px white;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  .card1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+  .goto-btn {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 375px) {
-    .card1 {
-        border-radius: 10px 10px 0 0;
-    }
-    .card3 {
-        background-color: hsl(179, 100%, 13%);
-        border-radius: 0 0 10px 10px;
-    }
-    .goto-btn {
-        margin: 10px;
-    }
+  .card1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+  }
+  .goto-btn {
+    margin: 10px;
+  }
 }
-/* @media (max-width: 1440px) {
-    .card1 {
-        border-radius: 10px 0 0 10px;
-    }
-    .card3 {
-        background-color: hsl(179, 100%, 13%);
-        border-radius: 0 10px 10px 0;
-    }
-    .goto-btn {
-        margin: 10px;
-    }
-} */
 
 .btn-link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 .goto-btn {
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 40px;
-    background-color: hsl(0, 0%, 50%);
-    margin-left: 10px; 
-   
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 40px;
+  background-color: hsl(0, 0%, 50%);
+  margin-left: 10px;
 }
 
 .btn-container {
-    text-align: center;
+  text-align: center;
 }
